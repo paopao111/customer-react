@@ -9,7 +9,10 @@
     "build": "vite build",
     "lint": "eslint './src/*.{ts,tsx}'",
     "prepare": "husky install",
-    "lint-staged": "echo 'Pre-commit!'"
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +31,7 @@
     "husky": "^8.0.0"
   },
   "dependencies": {
+    "lint-staged": "^13.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
